@@ -28,7 +28,6 @@ try:
         result = sock.connect_ex((target, port))
         if result == 0:
             ScannerLog = open('scanner.log', 'w')
-            #print("Port {}: Open".format(port))
             ScannerLog.write("Port {}: Open".format(port),)
             ScannerLog.write("\n")
         sock.close()
